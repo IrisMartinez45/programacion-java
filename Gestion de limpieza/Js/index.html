@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de limpieza</title>
+</head>
+<body>
+    <div class="container" style="width: 100%;">
+        <br><br><br>
+        <h1 style="text-align: center;">Gestión de limpieza</h1>
+        <br>
+        <table border="6px" width="50%" style="margin-left: auto; margin-right: auto; background-color: papayawhip;">
+            <tr>
+                <td><label for="productos">Lista de productos de limpieza</label></td>
+                <td><select name="producto" id="producto">
+                    <option value="Jabon_liquido">Jabón líquido 50Lps</option>
+                    <option value="Detergente_barra">Detergente en barra 45Lps</option>
+                    <option value="Escoba">Escoba 60Lps</option>
+                    <option value="Trapeador">Trapeador 60Lps</option>
+                    <option value="Cepillo_bano">Cepillo de baño 40Lps</option>
+                    <option value="Esponja">Esponja 25Lps</option>
+                    <option value="Cloro">Cloro 20Lps</option>
+                    <option value="Papel_higienico">Papel higiénico 25Lps</option>
+                    <option value="Bolsas_basura">Bolsas de basura 10Lps</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="nombre_encargado">Nombre del Encargado que realizó la entrega</label></td>
+                <td><input type="text" id="nombre_encargado" placeholder="nombre del encargado"></td>
+            </tr>
+            <tr>
+                <td><label for="nombre_empleado">Nombre del empleado que recibió el producto</label></td>
+                <td><input type="text" id="nombre_empleado" placeholder="nombre del empleado"></td>
+            </tr>
+            <tr>
+                <td><label for="producto_entregado">Producto entregado</label></td>
+                <td><input type="text" id="producto_entregado" placeholder="Ingrese producto entregado"></td>
+            </tr>
+            <tr>
+                <td><label for="cantidad_entregada">Cantidad Entregada</label></td>
+                <td><input type="number" id="cantidad_entregada" placeholder="Ingrese cantidad entregada"></td>
+            </tr>
+            <tr>
+                <td><label for="fecha_entrega">Fecha de la entrega</label></td>
+                <td><input type="date" id="fecha_entrega" placeholder="Ingrese la fecha de entrega"></td>
+            </tr>
+            <tr>
+                <td><label for="Total">El Total de la transacción es:</label></td>
+                <td><input type="text" id="Total" readonly placeholder="Total"></td>
+            </tr>
+            <tr>
+                <td><button onclick="calcular()">Calcular Total</button></td>
+                <td><button onclick="Nuevo_Registro()">Nuevo Registro</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
